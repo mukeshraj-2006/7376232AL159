@@ -1,0 +1,35 @@
+{
+  "name": "@campus-notify/logging-middleware",
+  "version": "1.0.0",
+  "description": "Production-grade reusable logging middleware for Campus Notifications Platform",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "example:backend": "ts-node src/examples/backend.example.ts",
+    "example:frontend": "ts-node src/examples/frontend.example.ts",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "logging",
+    "middleware",
+    "campus",
+    "notifications",
+    "typescript"
+  ],
+  "author": "Campus Notifications Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0",
+    "ts-node": "^10.9.0",
+    "vitest": "^1.6.0",
+    "dotenv": "^16.4.0"
+  }
+}
